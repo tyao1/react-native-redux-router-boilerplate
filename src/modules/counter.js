@@ -1,5 +1,5 @@
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
+const INCREMENT = 'COUNTER_INCREMENT';
+const DECREMENT = 'COUNTER_DECREMENT';
 
 const initialState = {
   count: 0

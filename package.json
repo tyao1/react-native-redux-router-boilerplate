@@ -1,5 +1,5 @@
 {
-  "name": "react-native-redux-router-boilerplate",
+  "name": "Counter",
   "version": "0.0.1",
   "scripts": {
     "start": "react-native start",
@@ -15,10 +15,13 @@
     "redux": "^3.0.5"
   },
   "devDependencies": {
+    "babel-eslint": "^4.1.6",
     "babel-plugin-transform-decorators": "^6.4.0",
     "babel-plugin-transform-export-extensions": "^6.4.0",
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^3.1.0"
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-import": "^0.12.1",
+    "eslint-plugin-react": "^3.14.0"
   },
   "license": "MIT"
 }

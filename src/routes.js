@@ -32,7 +32,7 @@ const defaultSchema = {
 class Routes extends Component {
   render() {
     return (
-      <Router {...this.props} initial="news">
+      <Router {...this.props} initial="launch">
         <Schema name="default" {...defaultSchema} />
         <Route name="launch" component={Launch}/>
         <Route name="counter" component={Counter}/>

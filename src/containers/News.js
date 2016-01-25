@@ -15,7 +15,7 @@ class News extends Component {
     const {loading, loaded, data} = news;
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <TouchableHighlight onPress={this.props.load}>
+        <TouchableHighlight onPress={this.props.load} style={{marginTop: 24}}>
           <Text>LOAD</Text>
         </TouchableHighlight>
         <Text>{loading ? 'loading' : 'not loading'}</Text>

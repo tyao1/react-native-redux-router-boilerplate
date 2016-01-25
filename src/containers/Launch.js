@@ -23,7 +23,7 @@ export default class Launch extends Component {
     const {actions} = this.props;
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Welcome to Caculator</Text>
+        <Text>Welcome to React-native-redux-router</Text>
         <TouchableHighlight onPress={actions.routes.counter()}><Text>Go to Caculator</Text></TouchableHighlight>
         <TouchableHighlight onPress={actions.routes.news()}><Text>Go to news</Text></TouchableHighlight>
       </View>

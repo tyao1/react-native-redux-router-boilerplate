@@ -1,6 +1,6 @@
 // Modified implementation from react-native-router-redux
 
-import React, { Navigator, StyleSheet, View } from 'react-native';
+import React, { BackAndroid, Platform, Navigator, StyleSheet, View } from 'react-native';
 import Animations from './libs/animations';
 import { actionTypes } from './modules/router';
 
@@ -137,6 +137,16 @@ export class Router extends React.Component {
 
   componentDidMount() {
     this.props.actions.init(this.initial);
+    // handle android back key
+    if (Platform.OS === 'android') {
+      BackAndroid.addEventListener('hardwareBackPress', () => {
+        if (this.props.router.routes.length > 1) {
+          this.props.actions.pop();
+          return true;
+        }
+        return false;
+      });
+    }
   }
 
   componentWillReceiveProps(nextProps) {

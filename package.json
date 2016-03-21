@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "fbjs": "^0.6.1",
-    "react-native": "^0.18.1",
+    "react-native": "^0.22.2",
     "react-redux": "^4.0.6",
     "redux": "^3.0.5"
   },
